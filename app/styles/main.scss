@@ -1,0 +1,48 @@
+// bower:scss
+// endbower
+
+body {
+  padding: 0;
+  margin: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/hai.jpg') center center;
+    background-size: 5vw;
+    animation: yesss 15s infinite linear;
+  }
+}
+
+.hai {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: totes 2s infinite linear;
+}
+
+@keyframes yesss {
+  0%, 100% {
+    transform: scale(1);
+    filter: saturate(100%);
+  }
+  50% {
+    transform: scale(5);
+    filter: saturate(200%);
+  }
+}
+
+@keyframes totes {
+  0%, 100%  {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+}
